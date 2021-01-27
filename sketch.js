@@ -32,14 +32,12 @@ function setup() {
   fairy = createSprite(100, 500, 20, 20);
   fairy.addImage(fairyImage);
   fairy.scale = 0.2;
-  fairy.debug = true;
   fairy.setCollider("rectangle", 0, 0, 600, 600);
 
   star = Bodies.rectangle(600, 200, 10, 10, star_options);
   World.add(world, star);
 
   renderStar = createSprite(star.position.x, star.position.y, 10, 10);
-  renderStar.debug = true;
   renderStar.addImage(starImage);
 
   Engine.run(engine);
